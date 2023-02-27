@@ -1,0 +1,244 @@
+/* Inicializo reseteando los valores predeterminados*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* le doy tamaño al icono que ira en la barra de navegacion*/
+.tamanoLogo {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+/* le doy formato a la barra de navegacion*/
+
+/* le doy formato a la ul del nav*/
+.ulNav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+}
+.barraNav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+/* le quito el subrayado por default a los enlace y le cambio el color*/
+.enlace {
+    text-decoration: none;
+    color: black;
+}
+/* le pongo background a la portada del index*/
+.portada{
+    background-image: url("../IMAGES/portadaIndex.jpg");
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+/* le doy formato al titulo de la portada*/
+.portada h2{
+    font-size: 150%;
+    color: white;
+    border-radius: 2%;
+    padding: 0.8%;
+    background-color: rgba(255, 166, 0, 0.8);
+    position: absolute;
+    top: 60%;
+}
+/* le doy formato a todos los titulos del sitio web*/
+.titles {
+    text-align: center;
+    padding: 2%;
+}
+/* le doy formato a los parrafos del sitio web*/
+.paragraph {
+    padding: 1.5%;
+}
+.index__Mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    margin-top: 5%;
+}
+/* le doy formato al fondo de la section servicios en el index*/
+.index__ServiciosBackground{
+    background-color: burlywood;
+padding: 3%;
+gap: 2%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+/* le doy formato a las secciones de servicios que estan en el index*/
+.index__Servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 1%;
+    width: 100%;
+}
+/* le doy formato a los div que estan en la seccion servicios del index*/
+.index__Servicios div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* le doy borde a las img de los div que estan en la seccion servicios del index*/
+.index__Servicios div img{
+border-radius: 5%;
+}
+/* le doy formato a los titulis de las img de los div que estan en la seccion servicios del index*/
+.index__ServiciosIndex div h2{
+    margin-top: 2%;
+    text-align: center;
+}
+/* le doy formato al button que aparece en el seccion servicios del index*/
+.index__ButtonServicios{
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 1%;
+    margin: 1%;
+    align-items: center;
+}
+/*le doy formato al footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    margin-top: 5%;
+}
+/* le doy formato a la ul que aparece en el footer*/
+.footer__items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+/* le doy fondo y formato a la page historia*/
+.nosotros {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    background-color: blanchedalmond;
+}
+/* le doy formato al titulo de cada section */
+.nosotros h1 {
+text-align: center;
+}
+ /*le doy formato al texto de cada section*/
+.nosotros__Text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    gap: 40%;
+}
+ /*le doy formato a los parrafos de cada section*/
+.nosotros__Parrafo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 10%;
+}
+/* le doy formato a las imagenes de la section historia*/
+.nosotros__Image {
+    width: 100%;
+    padding: 2%;
+}
+/* le doy formato a las sections de la pagina nosotros*/
+.nosotros__Sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* le doy formato a los rows de la pagina servicios*/
+.servicios {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding: 2%;
+}
+/*Creo estilo de los servicios__card*/
+.servicios__card {
+    padding: 1%;
+    background-color: burlywood;
+    width: 100%;
+    border-radius: 5%;
+    text-align: center;
+}
+/* le doy el ancho maximo a cubrir por las cards en la pagina servicios*/
+.servicios__card__image {
+    width: 90%;
+}
+/* le doy formato al button de las cards servicios*/
+.servicios__card__button {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.5%;
+}
+/* le doy formato a la pagina clientes*/
+.clientes{
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+/*Creo estilo de los servicios__card*/
+.clientes__card {
+    background-color: slategray ;
+    width: 100%;
+    text-align: center;
+    border-radius: 1%;
+}
+/* le doy formato a la imagenes de las card clientes*/
+.clientes__card__image{
+    padding:5%;
+}
+/* le doy formato al fomulario*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* le doy formato a los items del fomulario*/
+.formulario__item {
+    padding: 0.5%;
+    width: 30%;
+    margin: 0.5%;
+}
+
+/* la siguiente linea hace que cuando baje el ancho de pantalla de los 1000px cambie a tamaño rojo
+@media screen and (max-width: 1000px) {
+    .barraNav {
+        background-color: brown;
+    }
+
+    .clientes{
+        flex-direction: column;
+    }
+    
+} */

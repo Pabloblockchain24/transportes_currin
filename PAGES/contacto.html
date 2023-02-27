@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <!-- Agrego favicon-->
+    <link rel="shortcut icon" href="../IMAGES/logoSitio.png" type="image/x-icon">
+    <!-- En la siguiente linea enlazamos el html al css-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+
+<body>
+    <header>
+        <!--El siguiente nav corresponde a la barra de navegacion que esta en todas las paginas-->
+        <nav class="barraNav">
+            <a href="../index.html"><img class="tamanoLogo" src="../IMAGES/logoSitio.png" ></a>
+            <ul class="ulNav">
+                <li> <a class="enlace" href="../index.html"> INICIO </a> </li>
+                <li> <a class="enlace" href="../PAGES/nosotros.html"> NOSOTROS </a></li>
+                <li> <a class="enlace" href="../PAGES/servicios.html"> SERVICIOS </a></li>
+                <li> <a class="enlace" href="../PAGES/clientes.html"> CLIENTES </a></li>
+                <li> <a class="enlace" href="../PAGES/contacto.html"> CONTACTO </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titles"> ENVIANOS TU SOLICITUD DE COTIZACION</h2>
+        <!-- A continuacion agregamos un formulario de contacto-->
+        <form class="formulario">
+            <input required type="text" placeholder="Ingrese su nombre" class="formulario__item">
+            <input required type="text" placeholder="Ingrese su apellido" class="formulario__item">
+            <input required type="email" placeholder="Ingrese su email" class="formulario__item">
+            <input required type="number" placeholder="Ingrese su numero de contacto" class="formulario__item">
+            <div class="formulario__item">
+                <h4> Ingrese servicio </h4>
+                <select name="Servicios">
+                    <option value="Retiro Puerto"> Retiro Puerto </option>
+                    <option value="Almacenaje"> Almacenaje </option>
+                    <option value="Desconsolidado"> Desconsolidado </option>
+                    <option value="Traslado a cliente"> Traslado a cliente</option>
+                    <option value="Devolución de vacios"> Devolución de vacios </option>
+                </select>
+            </div>
+            <textarea placeholder="Comentanos que andas buscando" rows="10" class="formulario__item"></textarea>
+            <fieldset class="formulario__item">
+                <legend> ¿ACEPTA SER CONTACTADO POR TRANSPORTES CURRIN? </legend>
+                <input type="radio" name="eleccion" value="Si" checked>Si
+                <input type="radio" name="eleccion" value="No">No
+            </fieldset>
+            <button type="submit" class="formulario__item"> ENVIAR </button>
+            <button type="reset" class="formulario__item"> LIMPIAR </button>
+        </form>
+    </main>
+    <!--A continuación agrego el footer que estar presente en todas las paginas-->
+    <footer class="footer">
+        <p> 2023 || Todos los derechos reservados</p>
+        <ul class="footer__items">
+            <li> Numero contacto: +569 50727028</li>
+            <li> E-mail contacto: parcepaiva@gmail.com</li>
+            <li> <a class="enlace" href="../PAGES/contacto.html"> Envianos tu solicitud </a> </li>
+        </ul>
+    </footer>
+</body>
+</html>

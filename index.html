@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agrego el titulo que aparecera en el navegador-->
+    <title>TRANSPORTES CURRIN</title>
+    <!-- Agrego favicon-->
+    <link rel="shortcut icon" href="./IMAGES/logoSitio.png" type="image/x-icon">
+    <!-- En la siguiente linea enlazamos el html al css-->
+    <link rel="stylesheet" href="./CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <!--El siguiente nav corresponde a la barra de navegacion que esta en todas las paginas-->
+        <nav class="barraNav">
+            <a href="./index.html"><img class="tamanoLogo" src="./IMAGES/logoSitio.png"></a>
+            <ul class="ulNav">
+                <li> <a class="enlace" href="./index.html"> INICIO </a> </li>
+                <li> <a class="enlace" href="./PAGES/nosotros.html"> NOSOTROS </a></li>
+                <li> <a class="enlace" href="./PAGES/servicios.html"> SERVICIOS </a></li>
+                <li> <a class="enlace" href="./PAGES/clientes.html"> CLIENTES </a></li>
+                <li> <a class="enlace" href="./PAGES/contacto.html"> CONTACTO </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- La siguiente secction tiene el background de la portada-->
+        <section class="portada">
+            <h2> TRANSPORTES CURRIN </h2>
+        </section>
+        <h2 class="titles"> NUESTROS SERVICIOS</h2>
+        <!-- La siguiente section presenta los servicios de la empresa y tiene un button que los redirige a la pagina Servicios-->
+        <section class="index__ServiciosBackground">
+            <section class="index__Servicios">
+                <div>
+                    <img src="./IMAGES/serviciosRetiros.jpg">
+                    <h2> RETIROS DE PUERTO</h2>
+                </div>
+                <div>
+                    <img src="./IMAGES/serviciosAlmacenamiento.jpg">
+                    <h2 class="servicios__card__tittle">ALMACENAMIENTO DE CARGA</h2>
+                </div>
+                <div>
+                    <img src="./IMAGES/serviciosDesconsolidado.jpeg">
+                    <h2 class="servicios__card__tittle">DESCONSOLIDADOS</h2>
+                </div>
+            </section>
+            <section class="index__Servicios">
+                <div>
+                    <img src="./IMAGES/serviciosEntregas.jpeg">
+                    <h2 class="servicios__card__tittle">ENTREGAS EN CLIENTE</h2>
+                </div>
+                <div>
+                    <img src="./IMAGES/serviciosVacios.jpg">
+                    <h2 class="servicios__card__tittle">DEVOLUCION DE VACIOS </h2>
+                </div>
+                <div>
+                    <img src="./IMAGES/serviciosRespaldo.jpg">
+                    <h2 class="servicios__card__tittle">RESPALDO OPERACIONES</h2>
+            </section>
+        <!-- A continuacion agrego el button al final de las 2 filas de servicios-->
+            <a href="./PAGES/servicios.html" class="enlace index__ButtonServicios"> REVISA MAS ACERCA DE NUESTROS SERVICIOS</a>
+        </section>
+        <!-- Agregamos un mapa de nuestra ubicacion con el html extraido de google-->
+        <div class="index__Mapa">
+            <h2> NUESTRA UBICACION</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6648.749608962035!2d-71.56221556314418!3d-33.56961656707432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966247023e1792eb%3A0x6186854449df7a4d!2sAlmacenamiento%20y%20deposito%20contenedores!5e0!3m2!1ses!2scl!4v1675891242670!5m2!1ses!2scl"
+                width="600" height="450" style="border: 2px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+    <!--A continuación agrego el footer que estar presente en todas las paginas-->
+    <footer class="footer">
+        <p> 2023 || Todos los derechos reservados</p>
+        <ul class="footer__items">
+            <li> Numero contacto: +569 50727028</li>
+            <li> E-mail contacto: parcepaiva@gmail.com</li>
+            <li> <a class="enlace" href="./PAGES/contacto.html"> Envianos tu solicitud </a> </li>
+        </ul>
+    </footer>
+</body>
+</html>
